@@ -1,1 +1,1 @@
-# React Frontend Quickstart docs
+# Email Variation docs
