@@ -1,5 +1,5 @@
-# React Frontend Quickstart ⚛️ 📦
-> Starter template using React on a website's frontend - without Node
+# Email Variation 📧
+> Create unique but valid variations of your Gmail address
 
 [![GitHub tag](https://img.shields.io/github/tag/MichaelCurrin/react-frontend-quickstart?include_prereleases=&sort=semver)](https://github.com/MichaelCurrin/react-frontend-quickstart/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
