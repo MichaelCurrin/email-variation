@@ -4,7 +4,7 @@ import React from "https://dev.jspm.io/react@17.0";
 
 const html = htm.bind(React.createElement);
 
-const REPO_URL = "https://github.com/MichaelCurrin/react-frontend-quickstart";
+const REPO_URL = "https://github.com/MichaelCurrin/email-variation";
 const RESOURCES_URL =
   "https://michaelcurrin.github.io/dev-resources/resources/javascript/packages/react/";
 

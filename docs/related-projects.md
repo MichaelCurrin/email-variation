@@ -2,7 +2,7 @@
 
 ## Frontend only
 
-- [![MichaelCurrin - preact-frontend-quickstart](https://img.shields.io/static/v1?label=MichaelCurrin&message=preact-frontend-quickstart&color=blue&logo=github)](https://github.com/MichaelCurrin/preact-frontend-quickstart)
+- [![MichaelCurrin - pemail-variation](https://img.shields.io/static/v1?label=MichaelCurrin&message=pemail-variation&color=blue&logo=github)](https://github.com/MichaelCurrin/pemail-variation)
     - Preact without Node as a quickstart. A very similar project to this React one - using Preact without a CLI or Node.
 - [![MichaelCurrin - vue-frontend-quickstart](https://img.shields.io/static/v1?label=MichaelCurrin&message=vue-frontend-quickstart&color=blue&logo=github)](https://github.com/MichaelCurrin/vue-frontend-quickstart)
     - Vue without Node quickstart. A similar project to this React one - using Vue without a CLI or Node.
