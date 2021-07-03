@@ -7,6 +7,19 @@ const html = htm.bind(React.createElement);
 const NAME_KEY = "name";
 const DOMAIN_KEY = "domain";
 
+function formatEmail(username, suffix, domain) {
+  return `${username}+${suffix}@${domain}`
+}
+
+function datetime(dt) {
+  return `${dt.getFullYear()}-${dt.getMonth()}-${dt.getDate()}-${dt.getHours()}-${dt.getMinutes()}-${dt.getSeconds()}`
+}
+
+function timestamp(dt) {
+  return dt.getTime()
+}
+
+
 function Username() {
   const persistedValue = localStorage.getItem(NAME_KEY) ?? "";
   const [value, setValue] = React.useState(persistedValue);
@@ -71,13 +84,26 @@ function Result() {
   const username = localStorage.getItem(NAME_KEY) ?? "";
   const domain = localStorage.getItem(DOMAIN_KEY) ?? "";
 
-  return html`
+  const now = new Date()
+  const suffixA = datetime(now)
+  const suffixB = timestamp(now)
+
+  if (username && domain) {
+    return html`
     <div>
       <code>
-      ${username}@${domain}
+        ${formatEmail(username, suffixA, domain)}
       </code>
+      <br/>
+      <code>
+      ${formatEmail(username, suffixB, domain)}
+    </code>
     </div>
   `;
+  }
+  else {
+    return html`<i>Nothing to display yet</i>`
+  }
 }
 
 
