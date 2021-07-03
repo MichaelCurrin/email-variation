@@ -67,6 +67,19 @@ function Domain() {
   `;
 }
 
+function Result() {
+  const username = localStorage.getItem(NAME_KEY) ?? "";
+  const domain = localStorage.getItem(DOMAIN_KEY) ?? "";
+
+  return html`
+    <div>
+      <code>
+      ${username}@${domain}
+      </code>
+    </div>
+  `;
+}
+
 
 function App() {
   return html`
@@ -74,6 +87,9 @@ function App() {
       <h2>Inputs</h2>
       <${Username}/>
       <${Domain}/>
+
+      <h2>Outputs</h2>
+      <${Result}/>
     </div>
   `;
 }
