@@ -21,14 +21,14 @@ function timestamp(dt) {
 
 function Username() {
   const persistedValue = localStorage.getItem(NAME_KEY) ?? "";
-  const [value, setValue] = React.useState(persistedValue);
+  const [username, setUsername] = React.useState(persistedValue);
 
   const onInput = (event) => {
-    setValue(event.target.value);
+    setUsername(event.target.value);
   };
 
   React.useEffect(() => {
-    localStorage.setItem(NAME_KEY, value);
+    localStorage.setItem(NAME_KEY, username);
   });
 
   return html`
@@ -41,7 +41,7 @@ function Username() {
 
       <input
         id="name-input"
-        value=${value}
+        value=${username}
         onInput=${onInput}
         placeholder="foobar123"
       />
@@ -51,14 +51,14 @@ function Username() {
 
 function Domain() {
   const persistedValue = localStorage.getItem(DOMAIN_KEY) ?? "";
-  const [value, setValue] = React.useState(persistedValue);
+  const [domain, setDomain] = React.useState(persistedValue);
 
   const onInput = (event) => {
-    setValue(event.target.value);
+    setDomain(event.target.value);
   };
 
   React.useEffect(() => {
-    localStorage.setItem(DOMAIN_KEY, value);
+    localStorage.setItem(DOMAIN_KEY, domain);
   });
 
   return html`
@@ -74,7 +74,7 @@ function Domain() {
 
       <input
         id="domain-input"
-        value=${value}
+        value=${domain}
         onInput=${onInput}
         placeholder="gmail.com"
       />
