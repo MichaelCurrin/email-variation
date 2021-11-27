@@ -91,8 +91,8 @@ function Result() {
   const suffixB = timestamp(now);
 
   if (username && domain) {
-    const emailA = formatEmail(username, suffixA, domain)
-    const emailB = formatEmail(username, suffixA, domain)
+    const emailA = formatEmail(username, suffixA, domain);
+    const emailB = formatEmail(username, suffixA, domain);
 
     return html`
       <div>
@@ -102,21 +102,21 @@ function Result() {
       </div>
     `;
   }
-  
-  return html`<i>Nothing to display yet</i>`;  
+
+  return html`<i>Nothing to display yet</i>`;
 }
 
 function App() {
   return html`
     <div>
       <h2>Inputs</h2>
-      <${Username}/>
-      <${Domain}/>
+      <${Username} />
+      <${Domain} />
 
       <h2>Outputs</h2>
-      <${Result}/>
+      <${Result} />
     </div>
   `;
 }
 
-ReactDOM.render(html`<${App}/>`, document.getElementById("app"));
+ReactDOM.render(html`<${App} />`, document.getElementById("app"));
