@@ -92,7 +92,7 @@ function Result() {
 
   if (username && domain) {
     const emailA = formatEmail(username, suffixA, domain);
-    const emailB = formatEmail(username, suffixA, domain);
+    const emailB = formatEmail(username, suffixB, domain);
 
     return html`
       <div>
