@@ -68,7 +68,7 @@ function Domain() {
         domain.
       </p>
 
-      <label hmltfor="domain-input">Domain: </label>
+      <label htmlfor="domain-input">Domain: </label>
 
       <span> </span>
 
